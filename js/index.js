@@ -23,7 +23,7 @@
             
         }
         else{
-                                                                                                                                                                                                        const data=await res.json()
+            const data=await res.json()
             console.log(data);
             document.getElementById("weather-display").innerHTML=
             ` <h3 class="city-name">${data.name}</h3>
@@ -67,75 +67,51 @@
                             </td>
                         </tr>
                     </table>`
+                    
+                    let imageLocation="";
                    
                     if(data.weather[0].main=="Clouds"){
-                        // console.log(data.weather[0].main);
-                        
-                        document.getElementById("main-card").style.backgroundImage="url('./images/pexels-pixabay-268917.jpg')";
-                        document.getElementById("main-card").style.backgroundPosition="cover";
-                        document.getElementById("main-card").style.backgroundRepeat="no-repeat";
-                        document.getElementById("main-card").style.backgroundSize="cover";
+                        imageLocation="url('./images/pexels-pixabay-268917.jpg')"
 
                     }
                     else if(data.weather[0].main=="Rain"){
-                        // console.log(data.weather[0].main);
-                        
-                        document.getElementById("main-card").style.backgroundImage="url('./images/seoul-rain.jpeg')";
-                        document.getElementById("main-card").style.backgroundPosition="cover";
-                        document.getElementById("main-card").style.backgroundRepeat="no-repeat";
-                        document.getElementById("main-card").style.backgroundSize="cover";
 
+                        imageLocation="url('./images/seoul-rain.jpeg')"
                     }
                     else if(data.weather[0].main=="Haze"){
-                        // console.log(data.weather[0].main);
-                        
-                        document.getElementById("main-card").style.backgroundImage="url('./images/haze.webp')";
-                        document.getElementById("main-card").style.backgroundPosition="cover";
-                        document.getElementById("main-card").style.backgroundRepeat="no-repeat";
-                        document.getElementById("main-card").style.backgroundSize="cover";
+            
+                        imageLocation="url('./images/haze.webp')"
 
                     }
                     else if(data.weather[0].main=="Snow"){
-                        // console.log(data.weather[0].main);
                         
-                        document.getElementById("main-card").style.backgroundImage="url('./images/snow.jpeg')";
-                        document.getElementById("main-card").style.backgroundPosition="cover";
-                        document.getElementById("main-card").style.backgroundRepeat="no-repeat";
-                        document.getElementById("main-card").style.backgroundSize="cover";
+                        imageLocation="url('./images/snow.jpeg')";
 
                     }
                     else if(data.weather[0].main=="Clear"){
-                        // console.log(data.weather[0].main);
-                        
-                        document.getElementById("main-card").style.backgroundImage="url('./images/clear.webp')";
-                        document.getElementById("main-card").style.backgroundPosition="cover";
-                        document.getElementById("main-card").style.backgroundRepeat="no-repeat";
-                        document.getElementById("main-card").style.backgroundSize="cover";
+                       
+                        imageLocation="url('./images/clear.webp')"
 
                     }
                     else if(data.weather[0].main=="Thunderstorm"){
                         // console.log(data.weather[0].main);
-                        
-                        document.getElementById("main-card").style.backgroundImage="url('./images/thunderstorm.jpeg')";
-                        document.getElementById("main-card").style.backgroundPosition="cover";
-                        document.getElementById("main-card").style.backgroundRepeat="no-repeat";
-                        document.getElementById("main-card").style.backgroundSize="cover";
+                      
+                        imageLocation="url('./images/thunderstorm.jpeg')";
 
                     }
                     else if(data.weather[0].main=="Atmosphere"){
                         // console.log(data.weather[0].main);
-                        
-                        document.getElementById("main-card").style.backgroundImage="url('./images/atmosphere.webp')";
-                        document.getElementById("main-card").style.backgroundPosition="cover";
-                        document.getElementById("main-card").style.backgroundRepeat="no-repeat";
-                        document.getElementById("main-card").style.backgroundSize="cover";
-
+                    
+                        imageLocation="url('./images/atmosphere.webp')"
                     }
                     else{
-                        document.getElementById("main-card").style.backgroundImage="url('./images/atmosphere.webp')";
+                        imageLocation="url('./images/atmosphere.webp')";
 
                     }
-
+                    document.getElementById("main-card").style.backgroundImage=imageLocation;
+                    document.getElementById("main-card").style.backgroundPosition="cover";
+                    document.getElementById("main-card").style.backgroundRepeat="no-repeat";
+                    document.getElementById("main-card").style.backgroundSize="cover";
             document.getElementById("main-card").style.backgroundColor="white";
 
 
