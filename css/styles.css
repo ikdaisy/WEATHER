@@ -5,8 +5,9 @@
 
 body{
     width: 100%;
-    /* background-color: white; */
-    background: linear-gradient(rgb(247, 168, 181),rgb(218, 118, 218));
+   
+    background-color: rgb(226, 144, 158)
+    /* background: linear-gradient(rgb(247, 168, 181),rgb(218, 118, 218)); */
     
     
 }
