@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="./css/styles.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Ga+Maamli&display=swap');
@@ -18,23 +20,35 @@
     <h3 id="date" style="text-align: center; font-family: Libre Baskerville, serif; font-size: 30px;"></h3> -->
 
     <div class="main">
-        <div class="main-card">
+        <div class="main-card" id="main-card">
             <div class="card-left">
                 <h2 class="weather-text">Weather</h2>
 
                 <div class="search">
-                    <h3>SEARCH HERE bla bla bla!!!</h3>
-                    <input type="search" name="" id="" placeholder="Enter location">
+                    <h4><i class="fa-solid fa-location-pin"></i>
+
+                        SEARCH LOCATION</h4>
+                    
+                    <input type="search" name="" id="search-input" placeholder="California" >
+                    <button onclick="fetchData()" class="search-btn">Search</button>
                 </div>
 
-            </div>
-            <!-- <div class="card-right">
 
-            </div> -->
+            </div>
+            <div id="weather-display">
+               
+                
+            </div>
+            <div id="weather-details">
+                   
+
+            </div>
+            
+            
         </div>
     </div>
 
-    <script src="./js/clock.js"></script>
+    <script src="./js/index.js"></script>
 
 </body>
 </html>
