@@ -212,20 +212,21 @@ td h3{
 /* Media Query for responsiveness */
 @media (min-width:300px) and (max-width:399.98px){
     .main-card{
-        width: 20em;
-        height: 80vh;
+        width: 19em;
+        height: 60vh;
         
                
        
      }
      .card-left{
-        width: 8em;
+        width: 9em;
+        height: 60vh;
        
 
      }
      .weather-text{
        
-        font-size: 12px;
+        font-size: 20px;
         position: absolute;
         top: 5%;
         left: 10%;
@@ -268,9 +269,9 @@ td h3{
      }
      
      .card{
-         width: 100%;
+         width: 100px;
          margin-top:20px;
-         margin-left: 30px;
+         margin-left: 20px;
          padding: 5px 10px;
          font-size: 10px;
      }
@@ -298,16 +299,16 @@ td h3{
      
      #weather-details{
 
-         /* width: 100%; */
+        
          position: absolute;
          top: 55%;
-         left: 40%;
+         left: 48%;
      }
      table{
        
          /* display: flex; */
          /* table-layout: fixed; */
-         width: 5rem;
+         width: 4rem;
          border-spacing: 3px;
           
      }
@@ -324,13 +325,13 @@ td h3{
      
      }
      td p{
-         font-size: 8px;
+         font-size:6px;
          padding-bottom: 2px;
-         width: 30px;
+         width: 24px;
          font-weight: bold;
      }
      td h3{
-         font-size: 7px;
+         font-size: 5px;
          font-weight: bold;
      }
 
