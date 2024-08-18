@@ -54,7 +54,7 @@
                                 <h3>${data.wind.speed}km/hr</h3>
                             </td>
                             <td>
-                                <p>humidity</p>
+                                <p>Humidity</p>
                                 <h3>${data.main.humidity}</h3>
                             </td>
                             <td>
